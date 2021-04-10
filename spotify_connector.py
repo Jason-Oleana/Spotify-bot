@@ -24,7 +24,7 @@ def get_tracks(token, api_url):
         'Authorization': 'Bearer ' + token,
     }
 
-    response = requests.get(api_url + 'https://api.spotify.com/v1/artists/11143403508/tracks', headers=headers)
+    response = requests.get(api_url + 'artists/11143403508/tracks', headers=headers)
     print("tracks: {}".format(response.text))
 
 get_playlists(token, api_url)
